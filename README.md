@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 👤 User Management App (React + JSONPlaceholder)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful and responsive **CRUD (Create, Read, Update, Delete)** user management web app built with **React**, **Axios**, and the [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) fake API.
 
-## Available Scripts
+This project is fully functional, deployed on **Netlify** and **Vercel**, and styled with clean custom CSS (no Tailwind or frameworks).
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔗 Live Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🌐 **Netlify**: [https://ffghgfcvh.netlify.app/](https://ffghgfcvh.netlify.app/)
+- 🚀 **Vercel**: [https://user-management-app-six-blush.vercel.app/](https://user-management-app-six-blush.vercel.app/)
+- 📁 **GitHub Repo**: [https://github.com/jshdghs/user-management-app](https://github.com/jshdghs/user-management-app)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ✅ Fetch user list from JSONPlaceholder
+- ➕ Add new users with validation
+- 🔄 Edit existing users
+- ❌ Delete users with confirmation
+- 📬 Real-time email validation
+- 💡 Form reset and UI feedback
+- 💅 Fully responsive, beautiful UI using `App.css`
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**
+- **React Router DOM**
+- **Axios**
+- **JSONPlaceholder API**
+- **Vanilla CSS (App.css)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📁 Folder Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+src/
+├── components/
+│ ├── UserForm.js // Form for add/edit
+│ └── UserList.js // User display cards
+├── pages/
+│ └── HomePage.js // Main page with logic
+├── App.js // Routing
+├── App.css // Custom CSS
+├── api.js // Axios functions
+└── index.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧪 Validation Logic
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- All fields are **required**
+- Email must match standard format (`name@example.com`)
+- Error shown using `alert()` if invalid input is entered
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Deployment Instructions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone repo:  
+   `git clone https://github.com/jshdghs/user-management-app.git`
 
-### Code Splitting
+2. Install dependencies:  
+   `npm install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Run locally:  
+   `npm start`
 
-### Analyzing the Bundle Size
+4. Build:  
+   `npm run build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Deploy via:
+   - **Netlify**: Drag `build/` folder or connect GitHub repo
+   - **Vercel**: Import GitHub repo and deploy
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧠 Author
 
-### Advanced Configuration
+Built by **Akhilesh Mandal**  
+Feel free to fork, star, or contribute to the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📜 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source and free to use under the [MIT License](https://opensource.org/licenses/MIT).
